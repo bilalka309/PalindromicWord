@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     static boolean isPalindrome(String word){
         int i=0,j=word.length()-1;
@@ -16,7 +18,11 @@ public class Main {
         return word.equals(reverse);
     }
     public static void main(String[] args) {
-      System.out.println(isPalindrome2("ccb"));
-      System.out.println(isPalindrome("ccb"));
+        Scanner in=new Scanner(System.in);
+        System.out.println("Palindromik Kelime : ");
+        String word=in.nextLine();
+
+      System.out.println(isPalindrome2(word));
+      System.out.println(isPalindrome(word));
     }
 }
